@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <title>sap</title>
+    <script src="https://assets.adobedtm.com/a999a44e6570992cede686e972cc08dcdb47b854/satelliteLib-8728323c318629fe87f6f47691d4d91578b9ca7b.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="css/api-integration~b2b-integration~event-driven-integration.e409741c.css"
+      rel="prefetch"
+    />
+    <link href="js/api-integration.5c655b18.js" rel="prefetch" />
+    <link
+      href="js/api-integration~b2b-integration~event-driven-integration.05731c19.js"
+      rel="prefetch"
+    />
+    <link href="js/b2b-integration.25a72685.js" rel="prefetch" />
+    <link href="js/event-driven-integration.317edaaa.js" rel="prefetch" />
+    <link href="css/app.3d099522.css" rel="preload" as="style" />
+    <link href="js/app.aa7b0279.js" rel="preload" as="script" />
+    <link href="js/chunk-vendors.aa4d34c8.js" rel="preload" as="script" />
+    <link href="css/app.3d099522.css" rel="stylesheet" />
+    <script>
+      !(function () {
+        function o(n, i) {
+          if (n && i)
+            for (var r in i)
+              i.hasOwnProperty(r) &&
+                (void 0 === n[r]
+                  ? (n[r] = i[r])
+                  : n[r].constructor === Object && i[r].constructor === Object
+                  ? o(n[r], i[r])
+                  : (n[r] = i[r]));
+        }
+        try {
+          var n = decodeURIComponent(
+            "%7B%22BW%22%3A%20%7B%20%22test_https%22%3A%20true%20%7D%7D"
+          );
+          if (
+            n.length > 0 &&
+            window.JSON &&
+            "function" == typeof window.JSON.parse
+          ) {
+            var i = JSON.parse(n);
+            void 0 !== window.BOOMR_config
+              ? o(window.BOOMR_config, i)
+              : (window.BOOMR_config = i);
+          }
+        } catch (r) {
+          window.console &&
+            "function" == typeof window.console.error &&
+            console.error("mPulse: Could not parse configuration", r);
+        }
+      })();
+    </script>
+    <script>
+      !(function (e) {
+        var n = "https://s.go-mpulse.net/boomerang/";
+        if ("False" == "True")
+          (e.BOOMR_config = e.BOOMR_config || {}),
+            (e.BOOMR_config.PageParams = e.BOOMR_config.PageParams || {}),
+            (e.BOOMR_config.PageParams.pci = !0),
+            (n = "https://s2.go-mpulse.net/boomerang/");
+        if (
+          ((window.BOOMR_API_key = "G3JB4-MG6V2-K5QTM-ZUA37-AURLV"),
+          (function () {
+            function e() {
+              if (!r) {
+                var e = document.createElement("script");
+                (e.id = "boomr-scr-as"),
+                  (e.src = window.BOOMR.url),
+                  (e.async = !0),
+                  o.appendChild(e),
+                  (r = !0);
+              }
+            }
+            function t(e) {
+              r = !0;
+              var n,
+                t,
+                a,
+                i,
+                d = document,
+                O = window;
+              if (
+                ((window.BOOMR.snippetMethod = e ? "if" : "i"),
+                (t = function (e, n) {
+                  var t = d.createElement("script");
+                  (t.id = n || "boomr-if-as"),
+                    (t.src = window.BOOMR.url),
+                    (BOOMR_lstart = new Date().getTime()),
+                    (e = e || d.body),
+                    e.appendChild(t);
+                }),
+                !window.addEventListener &&
+                  window.attachEvent &&
+                  navigator.userAgent.match(/MSIE [67]\./))
+              )
+                return (
+                  (window.BOOMR.snippetMethod = "s"), void t(o, "boomr-async")
+                );
+              (a = document.createElement("IFRAME")),
+                (a.src = "about:blank"),
+                (a.title = ""),
+                (a.role = "presentation"),
+                (a.loading = "eager"),
+                (i = (a.frameElement || a).style),
+                (i.width = 0),
+                (i.height = 0),
+                (i.border = 0),
+                (i.display = "none"),
+                o.appendChild(a);
+              try {
+                (O = a.contentWindow), (d = O.document.open());
+              } catch (_) {
+                (n = document.domain),
+                  (a.src =
+                    "javascript:var d=document.open();d.domain='" +
+                    n +
+                    "';void 0;"),
+                  (O = a.contentWindow),
+                  (d = O.document.open());
+              }
+              if (n)
+                (d._boomrl = function () {
+                  (this.domain = n), t();
+                }),
+                  d.write("<bo" + "dy onload='document._boomrl();'>");
+              else if (
+                ((O._boomrl = function () {
+                  t();
+                }),
+                O.addEventListener)
+              )
+                O.addEventListener("load", O._boomrl, !1);
+              else if (O.attachEvent) O.attachEvent("onload", O._boomrl);
+              d.close();
+            }
+            function a(e) {
+              window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+            }
+            if (
+              !window.BOOMR ||
+              (!window.BOOMR.version && !window.BOOMR.snippetExecuted)
+            ) {
+              (window.BOOMR = window.BOOMR || {}),
+                (window.BOOMR.snippetStart = new Date().getTime()),
+                (window.BOOMR.snippetExecuted = !0),
+                (window.BOOMR.snippetVersion = 14),
+                (window.BOOMR.url = n + "G3JB4-MG6V2-K5QTM-ZUA37-AURLV");
+              var i =
+                  document.currentScript ||
+                  document.getElementsByTagName("script")[0],
+                o = i.parentNode,
+                r = !1,
+                d = document.createElement("link");
+              if (
+                d.relList &&
+                "function" == typeof d.relList.supports &&
+                d.relList.supports("preload") &&
+                "as" in d
+              )
+                (window.BOOMR.snippetMethod = "p"),
+                  (d.href = window.BOOMR.url),
+                  (d.rel = "preload"),
+                  (d.as = "script"),
+                  d.addEventListener("load", e),
+                  d.addEventListener("error", function () {
+                    t(!0);
+                  }),
+                  setTimeout(function () {
+                    if (!r) t(!0);
+                  }, 3e3),
+                  (BOOMR_lstart = new Date().getTime()),
+                  o.appendChild(d);
+              else t(!1);
+              if (window.addEventListener)
+                window.addEventListener("load", a, !1);
+              else if (window.attachEvent) window.attachEvent("onload", a);
+            }
+          })(),
+          "".length > 0)
+        )
+          if (
+            e &&
+            "performance" in e &&
+            e.performance &&
+            "function" == typeof e.performance.setResourceTimingBufferSize
+          )
+            e.performance.setResourceTimingBufferSize();
+        !(function () {
+          if (
+            ((BOOMR = e.BOOMR || {}),
+            (BOOMR.plugins = BOOMR.plugins || {}),
+            !BOOMR.plugins.AK)
+          ) {
+            var n = "" == "true" ? 1 : 0,
+              t = "",
+              a = "wxljntixbjq5szckuxzq-f-7f38bd666-clientnsv4-s.akamaihd.net",
+              i = "false" == "true" ? 2 : 1,
+              o = {
+                "ak.v": "34",
+                "ak.cp": "498830",
+                "ak.ai": parseInt("168275", 10),
+                "ak.ol": "0",
+                "ak.cr": 0,
+                "ak.ipv": 4,
+                "ak.proto": "http/1.1",
+                "ak.rid": "2d9cd07d",
+                "ak.r": 45546,
+                "ak.a2": n,
+                "ak.m": "dsca",
+                "ak.n": "essl",
+                "ak.bpcip": "181.214.150.0",
+                "ak.cport": 20606,
+                "ak.gh": "104.76.192.147",
+                "ak.quicv": "",
+                "ak.tlsv": "tls1.3",
+                "ak.0rtt": "",
+                "ak.csrc": "-",
+                "ak.acc": "reno",
+                "ak.t": "1682613747",
+                "ak.ak":
+                  "hOBiQwZUYzCg5VSAfCLimQ==XY0LWFjT3bEf4dsfgmNK9Q7PgME9Z/nuUKm46E8wKq2149nbGwJd+T+fnPdBYnQ/uTHUyq/Ku+bhTseO1V9IST889BSHbJj9RdD7CfgsKHVt5W1p+qrYNGkmLbSwdc9KcPo9KbgGbZOpfd98HXuPZssGrdG87TCaGvwdM/zMViW6B9luaArKOxgw+pCcpXNJh3KH6pBUPZDm7pMVkYn4zyQM3TqiCPAcI2VeJHwnurt2DV9oBEgfDzHMboj87m6+58fATtmPVl65HGx0pxTUKEQOvRxKlqPSEM+bAFxERQ52Zom2VKfWH03CnPFwZYJOkJtXSSIgzH3JI9/fRo9OliM05dHn6WQ7XLcDnjghi0MXlfWmkQKw9PgEeB4MgR0pIE5UejS6gnPdOKpxw449ibwz24Dfd9EA57yUikQjwsM=",
+                "ak.pv": "75",
+                "ak.dpoabenc": "",
+                "ak.tf": i,
+              };
+            if ("" !== t) o["ak.ruds"] = t;
+            var r = {
+              i: !1,
+              av: function (n) {
+                var t = "http.initiator";
+                if (n && (!n[t] || "spa_hard" === n[t]))
+                  (o["ak.feo"] = void 0 !== e.aFeoApplied ? 1 : 0),
+                    BOOMR.addVar(o);
+              },
+              rv: function () {
+                var e = [
+                  "ak.bpcip",
+                  "ak.cport",
+                  "ak.cr",
+                  "ak.csrc",
+                  "ak.gh",
+                  "ak.ipv",
+                  "ak.m",
+                  "ak.n",
+                  "ak.ol",
+                  "ak.proto",
+                  "ak.quicv",
+                  "ak.tlsv",
+                  "ak.0rtt",
+                  "ak.r",
+                  "ak.acc",
+                  "ak.t",
+                  "ak.tf",
+                ];
+                BOOMR.removeVar(e);
+              },
+            };
+            BOOMR.plugins.AK = {
+              akVars: o,
+              akDNSPreFetchDomain: a,
+              init: function () {
+                if (!r.i) {
+                  var e = BOOMR.subscribe;
+                  e("before_beacon", r.av, null, null),
+                    e("onbeacon", r.rv, null, null),
+                    (r.i = !0);
+                }
+                return this;
+              },
+              is_complete: function () {
+                return !0;
+              },
+            };
+          }
+        })();
+      })(window);
+    </script>
+  </head>
+  <body>
+    <noscript
+      ><strong
+        >We're sorry but this SAP self-guided demo doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app"></div>
+    <script>
+      try {
+        _satellite.pageBottom();
+      } catch (e) {
+        window.console && console.error(e);
+      }
+    </script>
+    <script>
+      var AnalyticsDataLayer = {
+        events: {
+          pageView: true,
+        },
+        page: {
+          url: "location.href.split(“#”)[0]",
+          section:
+            "dmc-Explore how Data ASSIST by Auritas works for experts through self-guided demos",
+          language: "en",
+          country: "glo",
+        },
+      };
+      var customEvent = new CustomEvent("trackData", {
+        detail: AnalyticsDataLayer,
+      });
+      document.body.dispatchEvent(customEvent);
+    </script>
+    <script src="js/chunk-vendors.aa4d34c8.js"></script>
+    <script src="js/app.aa7b0279.js"></script>
+  </body>
+</html>
